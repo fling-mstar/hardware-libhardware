@@ -215,16 +215,6 @@ typedef enum {
      */
     BT_PROPERTY_ADAPTER_DISCOVERY_TIMEOUT,
 
-    // MStar Android Patch Begin
-    // bluetooth 3D Glass profile from broadcom
-    /**
-     * Description - List of bonded devices that can wake-up BT from headless mode
-     * Access mode - GET
-     * Data type - Array of bt_bdaddr_t of the bonded remote devices
-     *                (Array size inferred from property length).
-     */
-    BT_PROPERTY_ADAPTER_HEADLESS_MODE_WAKEUP_DEVICES,
-    // MStar Android Patch End
     /* Properties unique to remote device */
     /**
      * Description - User defined friendly name of the remote device
@@ -245,23 +235,6 @@ typedef enum {
      */
 
     BT_PROPERTY_REMOTE_VERSION_INFO,
-
-    // MStar Android Patch Begin
-    // proting from brcm
-    /**
-     * Description - Bluetooth device mode
-     * Access mode - GET and SET
-     * Data type   - bt_device_mode_t.
-     */
-    BT_PROPERTY_DEVICE_MODE,
-
-    /**
-     * Description - Bluetooth SCO routing mode
-     * Access mode - SET
-     * Data type   - bt_sco_route_mode_t.
-     */
-    BT_PROPERTY_SCO_ROUTE_MODE,
-    // MStar Android Patch End
 
     BT_PROPERTY_REMOTE_DEVICE_TIMESTAMP = 0xFF,
 } bt_property_type_t;
